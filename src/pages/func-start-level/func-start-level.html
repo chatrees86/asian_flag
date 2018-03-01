@@ -1,0 +1,25 @@
+<ion-header>
+    <ion-title></ion-title>
+    <ion-buttons end>
+      Score : 
+      <button ion-button (click)="rndChoice()">
+        {{ score }}
+      </button>
+    </ion-buttons>
+</ion-header>
+
+
+<ion-content padding>
+  <h3> {{ answerNumber }}) {{ question }} ?</h3>
+  <ion-list>
+    <ion-item *ngFor="let item of choiceItem; let i=index" color="{{ i == selectCheck ? 'primary' : '' }}" (click)="selectAnswer(i, item.id)">
+      <ion-thumbnail item-start>
+        <img src="assets/images/{{ item.flag }}">
+      </ion-thumbnail>
+      <h4>Choice {{ i+1 }}</h4>
+    </ion-item>
+  </ion-list>
+  <div>
+    <button ion-button full large color="btEasyPassLogin" block (click)="submitQuestion()">Submit an answer</button>
+  </div>
+</ion-content>

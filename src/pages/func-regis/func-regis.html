@@ -1,0 +1,23 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Register</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+ <ion-list>
+
+  <ion-item>
+    <ion-label>Your Name</ion-label>
+    <ion-input type="text" [(ngModel)]="yourName"></ion-input>
+  </ion-item>
+
+</ion-list>
+
+  <div padding>
+    <button ion-button full large color="primary" block (click)="goToStart()">Start</button>
+  </div>
+</ion-content>

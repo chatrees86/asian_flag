@@ -1,0 +1,31 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Leaning Start</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-card>
+  
+  <ion-card-header>
+    Welcome : {{ yourName }}
+  </ion-card-header>
+
+  <ion-card-content>
+    Countdown Leaning <font size="8">{{ tick }}</font> seconds
+  </ion-card-content>
+
+</ion-card>
+<ion-list>
+  <ion-item *ngFor="let item of asiaInfo">
+    <ion-thumbnail item-start>
+      <img src="assets/images/{{ item.flag }}">
+    </ion-thumbnail>
+    <h4>{{ item.countryName }}</h4>
+    <p>{{ item.fullName }}</p>
+  </ion-item>
+</ion-list>
+</ion-content>

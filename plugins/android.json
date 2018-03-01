@@ -1,0 +1,30 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "chatrees86.app.android"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "chatrees86.app.android"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "chatrees86.app.android"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "chatrees86.app.android"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "chatrees86.app.android"
+        },
+        "ionic-plugin-keyboard": {
+            "PACKAGE_NAME": "chatrees86.app.android"
+        }
+    },
+    "dependent_plugins": {}
+}
